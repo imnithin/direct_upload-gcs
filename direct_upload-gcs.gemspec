@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Upload assets from the client side directly to google cloud}
   spec.description   = %q{Returning the signed url from ruby gem so client can use it for uploading}
-  spec.homepage      = "direct_upload/gcs/version"
+  spec.homepage      = "https://github.com/imnithin/direct_upload-gcs/"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
