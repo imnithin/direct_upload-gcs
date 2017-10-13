@@ -41,3 +41,7 @@ The gem is available as open source under the terms of the [MIT License](https:/
 ## Code of Conduct
 
 Everyone interacting in the DirectUpload::Gcs project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/direct_upload-gcs/blob/master/CODE_OF_CONDUCT.md).
+
+
+https://bundler.io/v1.15/guides/creating_gem.html
+https://quickleft.com/blog/engineering-lunch-series-step-by-step-guide-to-building-your-first-ruby-gem/
