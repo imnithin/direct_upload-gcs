@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    direct_upload-gcs (0.1.0)
+    direct_upload-gcs (0.1.1)
 
 GEM
   remote: https://rubygems.org/
@@ -32,4 +32,4 @@ DEPENDENCIES
   rspec (~> 3.0)
 
 BUNDLED WITH
-   1.16.0.pre.2
+   1.16.0.pre.3
