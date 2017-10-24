@@ -1,8 +1,7 @@
 # DirectUpload::Gcs
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/direct_upload/gcs`. To experiment with that code, run `bin/console` for an interactive prompt.
+Generate a signed url in Ruby.
 
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
@@ -22,12 +21,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
-
+Ex: 
+```
 DirectUpload::Gcs.new('put', '1/abc.jpeg', 20.minutes, 'image/jpeg', 'bucket_wow', 'lib/key_file.json').signed_url
-
+```
+Method signature
+```
 DirectUpload::Gcs.new(method, file_name, time_in_mins, content_type, bucket, path_to_key_file).signed_url
+```
 
+The returned signature can be used for multiple actions from client or server side to operate on assets on GC.
+
+I have used to handle file uploads from client front.
 
 ## Development
 
@@ -43,10 +48,14 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
-## Code of Conduct
 
-Everyone interacting in the DirectUpload::Gcs project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/direct_upload-gcs/blob/master/CODE_OF_CONDUCT.md).
+Source:
 
 http://andrewvos.com/uploading-files-directly-to-google-cloud-storage-from-client-side-javascript
+
+Setup Ruby Gem:
+
 https://bundler.io/v1.15/guides/creating_gem.html
+
+
 https://quickleft.com/blog/engineering-lunch-series-step-by-step-guide-to-building-your-first-ruby-gem/

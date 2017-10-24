@@ -29,7 +29,7 @@ module DirectUpload
     private
 
     def full_path
-      "/#{bucket}/#{file_name}"
+      @_full_path = "/#{bucket}/#{file_name}"
     end
 
     def storage_configuration
