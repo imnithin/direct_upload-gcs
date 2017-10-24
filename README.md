@@ -24,6 +24,11 @@ Or install it yourself as:
 
 TODO: Write usage instructions here
 
+DirectUpload::Gcs.new('put', '1/abc.jpeg', 20.minutes, 'image/jpeg', 'bucket_wow', 'lib/key_file.json').signed_url
+
+DirectUpload::Gcs.new(method, file_name, time_in_mins, content_type, bucket, path_to_key_file).signed_url
+
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
@@ -43,6 +48,5 @@ The gem is available as open source under the terms of the [MIT License](https:/
 Everyone interacting in the DirectUpload::Gcs project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/direct_upload-gcs/blob/master/CODE_OF_CONDUCT.md).
 
 http://andrewvos.com/uploading-files-directly-to-google-cloud-storage-from-client-side-javascript
-
 https://bundler.io/v1.15/guides/creating_gem.html
 https://quickleft.com/blog/engineering-lunch-series-step-by-step-guide-to-building-your-first-ruby-gem/

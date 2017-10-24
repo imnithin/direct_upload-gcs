@@ -1,43 +1,44 @@
 require 'direct_upload/gcs/version'
-require 'direct_upload/gcs/version'
+require 'active_support/time'
+require 'json'
 
 module DirectUpload
   class Gcs
+    GCS_API_ENDPOINT = 'https://storage.googleapis.com'.freeze
 
-    def initialize(method, file_name, expires_in, content_type = '', gc_keyfile_json, bucket)
-      @method = method || 'put'
+    attr_reader :method, :file_name, :expires_in, :content_type, :bucket, :key_file
+
+    def initialize(method, file_name, expires_in, content_type = '', bucket = ENV.fetch('GOOGLE_CLOUD_STORAGE_BUCKET'), key_file = ENV.fetch('GOOGLE_CLOUD_KEYFILE_JSON'))
+      @method = method
       @file_name = file_name
-      @expires_in = expires_in || 5.minutes
+      @expires_in = expires_in
       @content_type = content_type
-      @gc_keyfile_json = gc_keyfile_json
-      @bucket = bucket || ENV.fetch('GOOGLE_CLOUD_STORAGE_BUCKET')
+      @bucket = bucket
+      @key_file = key_file
     end
 
     def signed_url
-      full_path = "/#{bucket}/#{name}"
       signature = [method.to_s.upcase, '', content_type, expires_in.to_i, full_path].join("\n")
       digest = OpenSSL::Digest::SHA256.new
       signer = OpenSSL::PKey::RSA.new(storage_configuration['private_key'])
       signature = Base64.strict_encode64(signer.sign(digest, signature))
       signature = CGI.escape(signature)
-      "#{storage_url}#{full_path}"
-    end
-
-    def storage_configuration
-      @keyfile ||= JSON.parse(ENV.fetch('GOOGLE_CLOUD_KEYFILE_JSON'))
+      "#{GCS_API_ENDPOINT}#{full_path}#{query_params(signature)}"
     end
 
     private
 
-    def storage_url
-      'https://storage.googleapis.com'
+    def full_path
+      "/#{bucket}/#{file_name}"
     end
 
-    def query_params
-      "?GoogleAccessId=#{storage_configuration['client_email']}&Expires=#{expires.to_i}&Signature=#{signature}"
+    def storage_configuration
+      @_storage_configuration ||= JSON.parse(File.read(key_file))
+    end
+
+    def query_params(signature)
+      "?GoogleAccessId=#{storage_configuration['client_email']}&Expires=#{expires_in.to_i}&Signature=#{signature}"
     end
 
   end
 end
-
-# DirectUpload::Gcs.new('put', 'abc.jpeg', 20.minutes, )

@@ -1,0 +1,12 @@
+{
+  "type": "xxx",
+  "project_id": "xxx",
+  "private_key_id": "xxx",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nxxxxxxxxxxxxrtt\n1vFdBE8l3Ka3ddxPNeNtDgIIw+3/q5D1kkJsasOpxPLlBaunqYLnq+bHNbWWN5ZY\nvwUtqzb0dEB2F2QmzsMf++tEzB5Cz1uLnMjGHiudOfL3/wNsy4OnH3Itz6Ak4uCd\ncPg2d1krKp2pA7NC1J3sdTsurCtczlHczcZ8ZGK2O9g3x8roAHEHWzEeKVFnOsAF\n8IaM0Ja4uQU3ETdXlC71dPH0yZEIxP5gdZGKd/Tjf55JszyvwZ6H06ruHayczLU9\nJIsGwQCU5BvVj+SDsrb5RhM0kC3PqH6e1qJtZWzDekBR25vkKqxkdyZb49TIFjrT\neTZ9R9tZAgMBAAECggEABiDPi9p8T3UQpZzHkwVSUnzZqi3uJzRrhFLBuCZPnWRd\n8n41ZFf0Yw9tlnyB4rEa2Voh9ZSc6OOGpDeXyM+pBuVcv3IMAH+3WG481luU4wbS\nvt6tT+bVgAW44BO0zfkEHlV/DIRqY7SdY9avcPghDY1Zevs6Ad04E6xyX0PkWNEh\nkEGpQKsBxrWKPSI4Fkc/\nJd/6htvCAsjSGLFLOhoLvvo5ahPSuCH/zxlxWdePg0AfND0W5hHUgZ5IPWvdmA5A\nmIR+dfsdfsdfsdf/uiHML/EjJWetlVSQ\nrgdfgdfgdfgdfg\nuv7+IoWzv04UqBtrM0JEIK6pVSxNaUdt4hLXZ68UqSeM3QAFpRzTndHkXXbIge5e\nYtOjoWoXn9bXu//Y+5jlYEmfGQKBgQDkXg0Xi3c8rLIG7F91IlVZhfmAddwSUrJn\nOV5XKkzYENnzU1XUQKjua5XfEQrxN/+80eKomS6hYsk07baF2klKxrioVTswpglW\nVeu8Xdj/bkD4glSfGta5Y1HWEqeehIU5mq53TdT1TeeTRHqAOGyI0RqB5SYGpNSH\nP85vtZbmQQKBgHbzCU2E71E90N/+bUNcmpnMG0k1/O2XLfEWW47f\nZyB/DFF/iQL7o6Ce5tlD1pw/GlMsS/fB7xcQ4SzSlQ5kJWqzGQtCxvyq/8Ko\n6cKwQ8wEcpUfJyd5CdOVEVB7+QiDB3F33qG6LzMV8kUe+X7gaNoo05XhAoGAG+v3\n89IEkTGYTspl3X+GKfz8hZ1jfAYKdB6Kj2PHo39j9qFQ1DPXs9cJqw19ZgLvzNlo\nui6Iigj3Cvapo3IOFgt4FnTdWNRkPd8hhJWA67JCVWAyEoYIjQA8yEzdm78ePu3P\nuRyWFiwhTVtJExZTBuNyN0GaRaOvrJ27kuMEAUECgYEAgu3g+u4y4exazYHJpkYn\n7l92jOt3k0gvP2mL2v99frQlneHP23e1uRiJv0EbRO4Rb0f/2toef3Fu04x3wEmH\nbtjUKWwapc2bpQyJw3dCHKrjXvD6zphRkbaQGy3JfN1nDW0YirwkNK+5ZgMZchr8\nY+tXy205iYsfrM+7ghvG1VM=\n-----END PRIVATE KEY-----\n",
+  "client_email": "user@project.iam.gserviceaccount.com",
+  "client_id": "111",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x111/project.iam.gserviceaccount.com"
+}
