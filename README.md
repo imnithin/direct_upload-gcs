@@ -1,4 +1,4 @@
-# DirectUpload::Gcs
+# DirectUpload Gcs
 
 Generate a signed url in Ruby.
 
